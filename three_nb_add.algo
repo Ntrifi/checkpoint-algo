@@ -6,7 +6,7 @@ VAR
     counter_words:INTEGER;
     counter_vowels:INTEGER;
 BEGIN
-    counter_caracters:=0;
+    counter_caracters:=1;
     counter_words:=0;
     counter_vowels:=1;
     Write("Give me the sentence");
