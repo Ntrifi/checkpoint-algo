@@ -6,13 +6,16 @@ VAR
     counter_words:INTEGER;
     counter_vowels:INTEGER;
 BEGIN
-    Write(Give me the sentence);
+    counter_caracters:=0;
+    counter_words:=0;
+    counter_vowels:=1;
+    Write("Give me the sentence");
     Read(str);                                  
-    str.toLower():
+    str.ToLower():
     WHILE (str[i] <> '.') DO
             counter_caracters:= counter_caracters +1;
         IF (str[i]= ' ') THEN
-            counter_words:= ccounter_words +1;
+            counter_words:= counter_words +1;
         END_IF
         IF (str[i] in ['a', 'e', 'i', 'o', 'u' , 'y'] ) THEN
             counter_vowels:= counter_vowels +1;
