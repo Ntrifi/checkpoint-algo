@@ -1,0 +1,25 @@
+ALGORITHM analyze_sentence;
+VAR
+    str:STRING(50)
+    i:INTEGER=0
+    counter_caracters:INTEGER;
+    counter_words:INTEGER;
+    counter_vowels:INTEGER;
+BEGIN
+    Write(Give me the sentence);
+    Read(str);                                  
+    str.toLower():
+    WHILE (str[i] <> '.') DO
+            counter_caracters:= counter_caracters +1;
+        IF (str[i]= ' ') THEN
+            counter_words:= ccounter_words +1;
+        END_IF
+        IF (str[i] in ['a', 'e', 'i', 'o', 'u' , 'y'] ) THEN
+            counter_vowels:= counter_vowels +1;
+        END_IF
+    i:=i+1;
+    END_WHILE
+    Write (counter_caracters)
+    Write (counter_words)
+    Write (counter_vowels)
+END
